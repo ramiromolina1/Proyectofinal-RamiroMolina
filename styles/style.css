@@ -126,6 +126,10 @@ nav ul li {
     flex-wrap: wrap;
 }
 
+.img-home {
+    display: flex;
+}
+
 .div-tildes {
     padding: 20px;
     display: flex;
@@ -134,12 +138,6 @@ nav ul li {
 .im-tildes {
     height: 50px
 }
-
-#im-home {
-    display: block;
-    margin: 0px auto;
-}
-
 
 
 /* cajas */
@@ -283,7 +281,9 @@ form {
         flex-direction: column;
     }
 
-    .ubi-link {width: 200px;}
+    .ubi-link {
+        width: 200px;
+    }
 }
 
 /* nuestro proyecto */
