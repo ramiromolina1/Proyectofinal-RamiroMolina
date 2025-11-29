@@ -60,6 +60,7 @@ h1 {
     font-size: 50px;
     margin: 10px;
     text-align: center;
+    padding: 30px;
 }
 
 h2 {
@@ -96,6 +97,17 @@ nav ul {
     gap: 16px;
 }
 
+.galponlogo {
+    width: 90px;
+}
+
+#galponlogo {
+    width: 200px;
+    padding: auto;
+    margin: auto;
+    align-items: auto;
+}
+
 nav ul li {
     list-style-type: none;
 }
@@ -127,6 +139,7 @@ nav ul li {
     display: block;
     margin: 0px auto;
 }
+
 
 
 /* cajas */
@@ -190,6 +203,19 @@ form {
     height: 60px;
 }
 
+.card-countainer-horarios {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divat {
+    padding: 30px;
+    align-items: center;
+    display: flex;
+}
+
 .hs-container {
     margin: 20px;
     display: flex;
@@ -205,6 +231,7 @@ form {
     justify-content: space-between;
 }
 
+
 .formsend-container {
     margin: 28px;
     display: flex;
@@ -215,17 +242,13 @@ form {
     width: 28%;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
-    border-left: 2px solid red;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 2px solid rgb(255, 255, 255);
+    flex-wrap: wrap;
 }
 
-.divat {
-    margin: 50px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 
 #id-celu {
     display: none;
@@ -246,4 +269,50 @@ form {
     header {
         padding: 0px;
     }
+
+    .formsend-container {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formsend {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ubi-link {width: 200px;}
+}
+
+/* nuestro proyecto */
+
+.img-vertical {
+    height: 130px;
+}
+
+.img-horizontal {
+    height: 120px;
+}
+
+.card-countainer-nues-proyecto {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.countainer-nues-proyecto {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.countainer-nues-proyecto2 {
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
