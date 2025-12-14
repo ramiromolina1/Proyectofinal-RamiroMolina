@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+    
+
+    #im-header {
+        padding: 5px;
+
+        .galponlogo {
+            width: 90px;
+        }
+    }
+
+    #id-celu {
+        display: none;
+        padding: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        ul {
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+
+            li {
+                list-style-type: none;
+            }
+            a:hover {color: #ffffff;}
+        }
+    }
+
+    #collapseExample {
+        background-color: lightgreen;
+        width: 100%;
+        border: none;
+
+        #sub-collapse {
+            background-color: lightgreen;
+            border: none;
+
+            #ul-li-celu {
+                text-align: center;
+            }
+        }
+    }
+
+
+}

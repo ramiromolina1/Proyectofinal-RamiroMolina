@@ -1,0 +1,30 @@
+@use "../utilidades/mixins.scss";
+
+#sec-quienessomos {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "h1 h1"
+                            "img-familia parrafo"
+                            "img-galpon parrafo" 
+    ;
+    #h1-quienessomos{
+        grid-area: h1;
+    }
+    #img-familia-quienessomos{
+        grid-area: img-familia;
+    }
+    #img-galpon-quienessomos{
+        grid-area: img-galpon ;
+    }
+    #p-quienessomos {
+        grid-area: parrafo ;
+    }
+    
+    img{
+        width:100%;
+    }
+    img:hover {@include animation-images;}
+   
+
+}

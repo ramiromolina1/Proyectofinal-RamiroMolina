@@ -1,0 +1,59 @@
+@use "../utilidades/mixins.scss";
+
+main {
+    background-color: rgb(85, 182, 85);
+
+    //  {
+    //     font-family: "Dancing Script", cursive;
+    //     font-size: 50px;
+    //     margin: 10px;
+    //     text-align: center;
+    //     padding: 30px;
+    // }
+
+    h2 {
+        margin: 20px;
+        font-size: 28px;
+        height: 60px;
+    }
+
+    .boxes {
+        margin: 28px;
+        @include flex (row, center, start);
+        flex-wrap: wrap;
+        gap: 80px;
+
+        .typebox {
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 1px solid black;
+            gap: 15px;
+
+            ul li {
+                list-style-type: none;
+            }
+
+            .imgboxes {
+                display: flex;
+                flex-direction: column;
+                flex-direction: center;
+                justify-content: center;
+            }
+
+            .prices {
+                display: inline-block;
+                margin: 10px;
+                padding: 3px;
+                border: 1px solid black;
+            }
+
+            h3 {
+                font-weight: normal;
+                text-decoration: underline;
+            }
+        }
+    }
+}

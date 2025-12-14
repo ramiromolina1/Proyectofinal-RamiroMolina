@@ -1,0 +1,85 @@
+@use "../utilidades/mixins.scss";
+
+main {
+    ul li {
+        list-style-type: none;
+    }
+
+    h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: 50px;
+        margin: 10px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    h2 {
+        margin: 20px;
+        font-size: 28px;
+        height: 60px;
+    }
+
+    .card-countainer-ubicacion {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .divat {
+            padding: 30px;
+            align-items: center;
+            display: flex;
+        }
+
+    }
+
+    .preguntas-frecuentes-countainer {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        .frec-card {
+            .li-pregfrec {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .hs-container {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .hs-div {
+            padding: 20px;
+            @include flex (row,space-between,start);
+
+            // PONER EN MEDIAQUERIS (flex-wrap: wrap; y arreglar el padding)
+
+
+            .im-cliente {
+                height: 120px;
+            }
+        }
+    }
+
+    .formsend-container {
+        margin: 28px;
+        display: flex; 
+
+        .formsend {
+            width: 35%;
+            padding: 20px;
+            @include flex (row,space-evenly,center);
+            border-left: 2px solid rgb(255, 255, 255);
+
+            .im-at {
+                width: 60px;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        margin: 30px;
+    }
+}

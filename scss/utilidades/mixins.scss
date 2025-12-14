@@ -1,0 +1,40 @@
+// @mixin main {
+//     color: black;
+//     font-family: "Roboto", sans-serif;
+//     background-color: #55B655;
+// }
+
+// @mixin h1 {
+//     font-family: "Dancing Script", cursive;
+//     font-size: 50px;
+//     margin: 10px;
+//     text-align: center;
+//     padding: 30px;
+// }
+
+// @mixin h2 {
+//     margin: 20px;
+//     font-size: 28px;
+//     height: 60px;
+    
+// }
+
+// @mixin parrafos {
+//     margin: 50px;
+//     font-size: 25px;
+//     text-align: justify;
+//     font-family: "Roboto", sans-serif;
+// }
+
+@mixin animation-images {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+
+}
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
