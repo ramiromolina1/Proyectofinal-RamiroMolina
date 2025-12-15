@@ -57,4 +57,38 @@ header {
         }
     }
 
+    @media (max-width:500px) {
+        ul li {list-style-type: none;}
+        
+        #id-celu {
+            display: block;
+            margin: 10px 10px 0px 10px;
+        }
+
+        #nav-compu {
+            display: none;
+        }
+
+        header {
+            padding: 0px;
+        }
+
+        .formsend-container {
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .formsend {
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ubi-link {
+            width: 200px;
+        }
+
+    }
 }

@@ -57,6 +57,35 @@ header #collapseExample #sub-collapse {
 header #collapseExample #sub-collapse #ul-li-celu {
   text-align: center;
 }
+@media (max-width: 500px) {
+  header ul li {
+    list-style-type: none;
+  }
+  header #id-celu {
+    display: block;
+    margin: 10px 10px 0px 10px;
+  }
+  header #nav-compu {
+    display: none;
+  }
+  header header {
+    padding: 0px;
+  }
+  header .formsend-container {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .formsend {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  header .ubi-link {
+    width: 200px;
+  }
+}
 
 footer {
   display: flex;
