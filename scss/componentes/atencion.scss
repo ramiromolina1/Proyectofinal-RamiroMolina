@@ -6,20 +6,6 @@ main {
         list-style-type: none;
     }
 
-    // h1 {
-    //     font-family: "Dancing Script", cursive;
-    //     font-size: 50px;
-    //     margin: 10px;
-    //     text-align: center;
-    //     padding: 30px;
-    // }
-
-    // h2 {
-    //     margin: 20px;
-    //     font-size: 28px;
-    //     height: 60px;
-    // }
-
     .card-countainer-ubicacion {
         margin: auto;
         display: flex;
@@ -38,10 +24,23 @@ main {
         display: flex;
         flex-direction: column;
         padding: 5px;
-        .frec-card {
-            .li-pregfrec {
-                text-decoration: underline;
-            }
+
+        .boton-pregs {
+            font-size: 20px;
+            text-decoration: underline;
+            margin: 0px 20px 0px 20px;
+            padding: 3px;
+            background-color: transparent;
+            border: none;
+        }
+        .boton-pregs:hover {color: rgb(255, 255, 255);}
+
+        .respuestas {
+            margin: 0px 30px;
+            color: black;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
         }
     }
 
@@ -52,7 +51,7 @@ main {
 
         .hs-div {
             padding: 20px;
-            @include flex (row,space-between,start);
+            @include flex (row, space-between, start);
 
             // PONER EN MEDIAQUERIS (flex-wrap: wrap; y arreglar el padding)
 
@@ -60,26 +59,29 @@ main {
             .im-cliente {
                 height: 120px;
             }
+            .im-cliente:hover {@include animation-images}
         }
     }
 
     .formsend-container {
         margin: 28px;
-        display: flex; 
+        display: flex;
 
         .formsend {
             width: 35%;
             padding: 20px;
-            @include flex (row,space-evenly,center);
+            @include flex (row, space-evenly, center);
             border-left: 2px solid rgb(255, 255, 255);
 
             .im-at {
                 width: 60px;
             }
+            .im-at:hover {@include animation-images}
         }
     }
 
     form {
+        margin: auto;
         display: flex;
         margin: 30px;
     }

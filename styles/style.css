@@ -218,8 +218,23 @@ main .preguntas-frecuentes-countainer {
   flex-direction: column;
   padding: 5px;
 }
-main .preguntas-frecuentes-countainer .frec-card .li-pregfrec {
+main .preguntas-frecuentes-countainer .boton-pregs {
+  font-size: 20px;
   text-decoration: underline;
+  margin: 0px 20px 0px 20px;
+  padding: 3px;
+  background-color: transparent;
+  border: none;
+}
+main .preguntas-frecuentes-countainer .boton-pregs:hover {
+  color: rgb(255, 255, 255);
+}
+main .preguntas-frecuentes-countainer .respuestas {
+  margin: 0px 30px;
+  color: black;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
 }
 main .hs-container {
   margin: 20px;
@@ -235,6 +250,10 @@ main .hs-container .hs-div {
 }
 main .hs-container .hs-div .im-cliente {
   height: 120px;
+}
+main .hs-container .hs-div .im-cliente:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
 }
 main .formsend-container {
   margin: 28px;
@@ -252,7 +271,12 @@ main .formsend-container .formsend {
 main .formsend-container .formsend .im-at {
   width: 60px;
 }
+main .formsend-container .formsend .im-at:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
 main form {
+  margin: auto;
   display: flex;
   margin: 30px;
 }
