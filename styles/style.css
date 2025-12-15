@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* fuente dancing script */
+/* font-family: "Dancing Script", cursive; */
+/* fuente roboto */
+/*  font-family: "Roboto", sans-serif; */
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: lightgreen;
+}
+header #im-header {
+  padding: 5px;
+}
+header #im-header .galponlogo {
+  width: 90px;
+}
+header #id-celu {
+  display: none;
+  padding: 5px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav ul {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul a:hover {
+  color: #ffffff;
+}
+header #collapseExample {
+  background-color: lightgreen;
+  width: 100%;
+  border: none;
+}
+header #collapseExample #sub-collapse {
+  background-color: lightgreen;
+  border: none;
+}
+header #collapseExample #sub-collapse #ul-li-celu {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: green;
+  padding: 6px;
+}
+footer .imgfooter {
+  width: 50px;
+  height: 50px;
+}
+footer li {
+  display: inline-block;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+main .eslogan {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  text-align: center;
+}
+main .img-home {
+  display: flex;
+}
+main .img-home #galponlogo {
+  width: 200px;
+  padding: auto;
+  margin: auto;
+  align-items: auto;
+}
+main .home-container {
+  margin: 28px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .home-container .div-tildes {
+  padding: 20px;
+  display: flex;
+}
+main .home-container .div-tildes .im-tildes {
+  height: 50px;
+}
+main .home-container ul li {
+  list-style-type: none;
+}
+
+main .boxes {
+  margin: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+main .boxes .typebox {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  gap: 15px;
+}
+main .boxes .typebox ul li {
+  list-style-type: none;
+}
+main .boxes .typebox .imgboxes {
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  justify-content: center;
+}
+main .boxes .typebox .prices {
+  display: inline-block;
+  margin: 10px;
+  padding: 3px;
+  border: 1px groove black;
+}
+main .boxes .typebox h3 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+main .parrafos {
+  margin: 50px;
+  font-size: 25px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+main .card-countainer-nues-proyecto {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .card-countainer-nues-proyecto .countainer-nues-proyecto {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+main .card-countainer-nues-proyecto .countainer-nues-proyecto .img-vertical {
+  height: 130px;
+}
+main .card-countainer-nues-proyecto .countainer-nues-proyecto2 {
+  padding: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: start;
+}
+main .card-countainer-nues-proyecto .countainer-nues-proyecto2 .img-horizontal {
+  height: 120px;
+}
+main .card-countainer-nues-proyecto img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+
+main ul li {
+  list-style-type: none;
+}
+main .card-countainer-ubicacion {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .card-countainer-ubicacion .divat {
+  padding: 30px;
+  align-items: center;
+  display: flex;
+}
+main .preguntas-frecuentes-countainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+main .preguntas-frecuentes-countainer .frec-card .li-pregfrec {
+  text-decoration: underline;
+}
+main .hs-container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .hs-container .hs-div {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+main .hs-container .hs-div .im-cliente {
+  height: 120px;
+}
+main .formsend-container {
+  margin: 28px;
+  display: flex;
+}
+main .formsend-container .formsend {
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 2px solid rgb(255, 255, 255);
+}
+main .formsend-container .formsend .im-at {
+  width: 60px;
+}
+main form {
+  display: flex;
+  margin: 30px;
+}
+
+#sec-quienessomos {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "h1 h1" "img-familia parrafo" "img-galpon parrafo";
+}
+#sec-quienessomos #h1-quienessomos {
+  grid-area: h1;
+}
+#sec-quienessomos #img-familia-quienessomos {
+  grid-area: img-familia;
+}
+#sec-quienessomos #img-galpon-quienessomos {
+  grid-area: img-galpon;
+}
+#sec-quienessomos #p-quienessomos {
+  grid-area: parrafo;
+}
+#sec-quienessomos img {
+  width: 100%;
+}
+#sec-quienessomos img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+
+main {
+  background-color: rgb(85, 182, 85);
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 28px;
+  height: 60px;
+}
+
+.parrafos {
+  margin: 50px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=style.css.map */

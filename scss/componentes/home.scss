@@ -1,15 +1,7 @@
 @use "../utilidades/mixins.scss";
 
-main {
-    background-color: rgb(44, 165, 44);
 
-    h1 {
-        // font-family: "Dancing Script", cursive;
-        font-size: 50px;
-        margin: 10px;
-        text-align: center;
-        padding: 30px;
-    }
+main {
 
     .eslogan {
         font-family: "Dancing Script", cursive;
@@ -42,6 +34,9 @@ main {
                 height: 50px
             }
         }
-        ul li {list-style-type: none;}
+
+        ul li {
+            list-style-type: none;
+        }
     }
 }

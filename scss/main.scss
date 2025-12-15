@@ -13,3 +13,10 @@
 @import "./componentes/nuestroproyecto.scss";
 @import "./componentes/atencion.scss";
 @import "./componentes/quinessomos.scss";
+
+// COMANDOS GENERALES
+main {background-color: rgb(85, 182, 85); }
+h1 {@include h1};
+h2 {@include h2};
+.parrafos {@include parrafos};
+

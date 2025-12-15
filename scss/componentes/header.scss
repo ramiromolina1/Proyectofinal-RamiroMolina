@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: lightgreen;
-    
+
 
     #im-header {
         padding: 5px;
@@ -35,7 +35,10 @@ header {
             li {
                 list-style-type: none;
             }
-            a:hover {color: #ffffff;}
+
+            a:hover {
+                color: #ffffff;
+            }
         }
     }
 
@@ -53,6 +56,5 @@ header {
             }
         }
     }
-
 
 }

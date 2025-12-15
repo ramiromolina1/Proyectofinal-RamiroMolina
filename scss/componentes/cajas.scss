@@ -1,21 +1,6 @@
 @use "../utilidades/mixins.scss";
 
 main {
-    background-color: rgb(85, 182, 85);
-
-    //  {
-    //     font-family: "Dancing Script", cursive;
-    //     font-size: 50px;
-    //     margin: 10px;
-    //     text-align: center;
-    //     padding: 30px;
-    // }
-
-    h2 {
-        margin: 20px;
-        font-size: 28px;
-        height: 60px;
-    }
 
     .boxes {
         margin: 28px;
@@ -31,7 +16,6 @@ main {
             justify-content: space-around;
             border: 1px solid black;
             gap: 15px;
-
             ul li {
                 list-style-type: none;
             }
@@ -47,7 +31,7 @@ main {
                 display: inline-block;
                 margin: 10px;
                 padding: 3px;
-                border: 1px solid black;
+                border: 1px groove black;
             }
 
             h3 {
@@ -55,5 +39,6 @@ main {
                 text-decoration: underline;
             }
         }
+
     }
 }
