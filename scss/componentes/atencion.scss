@@ -33,7 +33,10 @@ main {
             background-color: transparent;
             border: none;
         }
-        .boton-pregs:hover {color: rgb(255, 255, 255);}
+
+        .boton-pregs:hover {
+            color: rgb(255, 255, 255);
+        }
 
         .respuestas {
             margin: 0px 30px;
@@ -55,17 +58,20 @@ main {
 
             // PONER EN MEDIAQUERIS (flex-wrap: wrap; y arreglar el padding)
 
-
             .im-cliente {
                 height: 120px;
             }
-            .im-cliente:hover {@include animation-images}
+
+            .im-cliente:hover {
+                @include animation-images
+            }
         }
     }
 
     .formsend-container {
         margin: 28px;
         display: flex;
+        flex-direction: row;
 
         .formsend {
             width: 35%;
@@ -76,13 +82,45 @@ main {
             .im-at {
                 width: 60px;
             }
-            .im-at:hover {@include animation-images}
+
+            .im-at:hover {
+                @include animation-images
+            }
         }
+
+
     }
 
     form {
         margin: auto;
         display: flex;
         margin: 30px;
+    }
+
+    @media (max-width:500px) {
+        .card-countainer-ubicacion {
+            margin: 15px;
+
+            .ubi-link {
+                width: 200px;
+            }
+        }
+
+        .boton-pregs {
+            text-align: left;
+        }
+
+        .formsend-container {
+            margin: 5px;
+            flex-direction: column;
+
+            .formsend {
+                margin: 5px;
+            }
+        }
+
+        form {
+            flex-direction: column;
+        }
     }
 }

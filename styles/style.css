@@ -287,6 +287,7 @@ main .hs-container .hs-div .im-cliente:hover {
 main .formsend-container {
   margin: 28px;
   display: flex;
+  flex-direction: row;
 }
 main .formsend-container .formsend {
   width: 35%;
@@ -308,6 +309,27 @@ main form {
   margin: auto;
   display: flex;
   margin: 30px;
+}
+@media (max-width: 500px) {
+  main .card-countainer-ubicacion {
+    margin: 15px;
+  }
+  main .card-countainer-ubicacion .ubi-link {
+    width: 200px;
+  }
+  main .boton-pregs {
+    text-align: left;
+  }
+  main .formsend-container {
+    margin: 5px;
+    flex-direction: column;
+  }
+  main .formsend-container .formsend {
+    margin: 5px;
+  }
+  main form {
+    flex-direction: column;
+  }
 }
 
 #sec-quienessomos {
