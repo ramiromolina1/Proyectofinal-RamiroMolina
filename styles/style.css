@@ -90,6 +90,10 @@ main .img-home #galponlogo {
   margin: auto;
   align-items: auto;
 }
+main .img-home img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
 main .home-container {
   margin: 28px;
   display: flex;
@@ -125,8 +129,18 @@ main .boxes .typebox {
   border: 1px solid black;
   gap: 15px;
 }
-main .boxes .typebox ul li {
-  list-style-type: none;
+main .boxes .typebox .box-productos {
+  width: auto;
+  background-color: transparent;
+  border: none;
+}
+main .boxes .typebox .box-productos ul li {
+  list-style-type: decimal;
+}
+main .boxes .typebox .boton-detalle {
+  padding: 3px;
+  background-color: rgb(160, 93, 73);
+  border: 1px solid black;
 }
 main .boxes .typebox .imgboxes {
   display: flex;
@@ -134,15 +148,18 @@ main .boxes .typebox .imgboxes {
   flex-direction: center;
   justify-content: center;
 }
+main .boxes .typebox img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
 main .boxes .typebox .prices {
   display: inline-block;
   margin: 10px;
   padding: 3px;
-  border: 1px groove black;
+  border: 1px solid black;
 }
 main .boxes .typebox h3 {
   font-weight: normal;
-  text-decoration: underline;
 }
 
 main .parrafos {

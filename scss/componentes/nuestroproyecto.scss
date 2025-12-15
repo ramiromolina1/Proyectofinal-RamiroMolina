@@ -17,9 +17,6 @@ main {
 
         .countainer-nues-proyecto {
             padding: 5px;
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-between;
             @include flex (row, center, start);
             .img-vertical {
                 height: 130px;
@@ -28,9 +25,6 @@ main {
 
         .countainer-nues-proyecto2 {
             padding: 5px;
-            // display: flex;
-            // flex-direction: row-reverse;
-            // justify-content: space-between;
             @include flex (row-reverse, center, start); 
             .img-horizontal {
                 height: 120px;

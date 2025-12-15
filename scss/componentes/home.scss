@@ -18,6 +18,7 @@ main {
             margin: auto;
             align-items: auto;
         }
+        img:hover {@include animation-images;}
     }
 
     .home-container {

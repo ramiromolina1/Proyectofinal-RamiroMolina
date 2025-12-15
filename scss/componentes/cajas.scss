@@ -16,8 +16,19 @@ main {
             justify-content: space-around;
             border: 1px solid black;
             gap: 15px;
-            ul li {
-                list-style-type: none;
+
+            .box-productos {
+                width: auto;
+                background-color: transparent;
+                border: none;
+                
+                ul li { list-style-type: decimal;}
+            }
+
+            .boton-detalle {
+                padding: 3px;
+                background-color: rgb(160, 93, 73);
+                border: 1px solid black;
             }
 
             .imgboxes {
@@ -27,16 +38,19 @@ main {
                 justify-content: center;
             }
 
+            img:hover {
+                @include animation-images;
+            }
+
             .prices {
                 display: inline-block;
                 margin: 10px;
                 padding: 3px;
-                border: 1px groove black;
+                border: 1px solid black;
             }
 
             h3 {
                 font-weight: normal;
-                text-decoration: underline;
             }
         }
 
