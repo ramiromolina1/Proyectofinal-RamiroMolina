@@ -359,6 +359,14 @@ main form {
   transition: all 0.3s linear;
 }
 
+@media (max-width: 500px) {
+  #sec-quienessomos {
+    grid-template-rows: 1fr;
+  }
+  #sec-quienessomos p {
+    font-size: 18px;
+  }
+}
 main {
   background-color: rgb(85, 182, 85);
 }
