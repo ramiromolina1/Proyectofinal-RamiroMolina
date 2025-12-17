@@ -38,18 +38,18 @@ header {
             }
 
             a:hover {
-                color: #ffffff;
+                color: variables.$a-color;
             }
         }
     }
 
     #collapseExample {
-        background-color: lightgreen;
+        background-color: variables.$header-color;
         width: 100%;
         border: none;
 
         #sub-collapse {
-            background-color: lightgreen;
+            background-color: variables.$header-color;
             border: none;
 
             #ul-li-celu {
@@ -59,8 +59,14 @@ header {
     }
 
     @media (max-width:500px) {
-        ul li {list-style-type: none;}
-        
+        ul li {
+            list-style-type: none;
+
+            a:hover {
+                color: variables.$a-color;
+            }
+        }
+
         #id-celu {
             display: block;
             margin: 10px 10px 0px 10px;

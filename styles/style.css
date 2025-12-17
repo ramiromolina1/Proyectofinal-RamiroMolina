@@ -9,6 +9,11 @@
 /* font-family: "Dancing Script", cursive; */
 /* fuente roboto */
 /*  font-family: "Roboto", sans-serif; */
+main {
+  padding: 50px 0px;
+  background-color: rgb(85, 182, 85);
+}
+
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 50px;
@@ -63,7 +68,7 @@ header nav ul li {
   list-style-type: none;
 }
 header nav ul a:hover {
-  color: #ffffff;
+  color: white;
 }
 header #collapseExample {
   background-color: lightgreen;
@@ -80,6 +85,9 @@ header #collapseExample #sub-collapse #ul-li-celu {
 @media (max-width: 500px) {
   header ul li {
     list-style-type: none;
+  }
+  header ul li a:hover {
+    color: white;
   }
   header #id-celu {
     display: block;
@@ -386,11 +394,6 @@ main form {
   #sec-quienessomos p {
     font-size: 18px;
   }
-}
-main {
-  padding-bottom: 50px;
-  padding-top: 50px;
-  background-color: rgb(85, 182, 85);
 }
 
 /*# sourceMappingURL=style.css.map */
