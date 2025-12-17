@@ -1,0 +1,5 @@
+@use "../utilidades/extend.scss";
+
+.boton-detalle {
+    @extend %boton
+}

@@ -168,6 +168,12 @@ main .home-container ul li {
   list-style-type: none;
 }
 
+.boton-detalle {
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid black;
+}
+
 main .boxes {
   margin: 28px;
   display: flex;
@@ -195,9 +201,7 @@ main .boxes .typebox .box-productos ul li {
   list-style-type: decimal;
 }
 main .boxes .typebox .boton-detalle {
-  padding: 3px;
   background-color: rgb(160, 93, 73);
-  border: 1px solid black;
 }
 main .boxes .typebox .imgboxes {
   display: flex;
