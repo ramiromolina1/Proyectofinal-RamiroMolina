@@ -1,19 +1,20 @@
 // BASE
-@import "./base/reset.scss";
-@import "./base/tipografia.scss";
+@import "./partials/base/reset.scss";
+@import "./partials/base/tipografia.scss";
 
 // UTILIDADES
-@import "./utilidades/mixins.scss";
-@import "./utilidades/variables.scss";
+@import "./partials/utilidades/mixins.scss";
+@import "./partials/utilidades/variables.scss";
 
 // COMPONENTES
-@import "./componentes/header.scss";
-@import "./componentes/footer.scss";
-@import "./componentes/home.scss";
-@import "./componentes/cajas.scss";
-@import "./componentes/nuestroproyecto.scss";
-@import "./componentes/atencion.scss";
-@import "./componentes/quinessomos.scss";
+@import "./partials/componentes/general.scss";
+@import "./partials/componentes/header.scss";
+@import "./partials/componentes/footer.scss";
+@import "./partials/componentes/home.scss";
+@import "./partials/componentes/cajas.scss";
+@import "./partials/componentes/nuestroproyecto.scss";
+@import "./partials/componentes/atencion.scss";
+@import "./partials/componentes/quinessomos.scss";
 
 // COMANDOS GENERALES
 main {
@@ -22,19 +23,19 @@ main {
     background-color: rgb(85, 182, 85);
 }
 
-h1 {
-    @include h1
-}
+// h1 {
+//     @include h1
+// }
 
-;
+// ;
 
-h2 {
-    @include h2
-}
+// h2 {
+//     @include h2
+// }
 
-;
+// ;
 
-.parrafos {
-    @include parrafos
-}
-;
+// .parrafos {
+//     @include parrafos
+// }
+// ;

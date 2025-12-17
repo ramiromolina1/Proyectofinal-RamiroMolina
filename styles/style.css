@@ -9,6 +9,26 @@
 /* font-family: "Dancing Script", cursive; */
 /* fuente roboto */
 /*  font-family: "Roboto", sans-serif; */
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 28px;
+  height: 60px;
+}
+
+.parrafos {
+  margin: 50px;
+  font-size: 25px;
+  text-align: justify;
+}
+
 header {
   display: flex;
   padding: 20px;
@@ -371,26 +391,6 @@ main {
   padding-bottom: 50px;
   padding-top: 50px;
   background-color: rgb(85, 182, 85);
-}
-
-h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 50px;
-  margin: 10px;
-  text-align: center;
-  padding: 30px;
-}
-
-h2 {
-  margin: 20px;
-  font-size: 28px;
-  height: 60px;
-}
-
-.parrafos {
-  margin: 50px;
-  font-size: 25px;
-  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */
