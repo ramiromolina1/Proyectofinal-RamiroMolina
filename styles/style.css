@@ -368,6 +368,8 @@ main form {
   }
 }
 main {
+  padding-bottom: 50px;
+  padding-top: 50px;
   background-color: rgb(85, 182, 85);
 }
 

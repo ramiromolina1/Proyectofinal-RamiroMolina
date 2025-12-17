@@ -15,8 +15,25 @@
 @import "./componentes/quinessomos.scss";
 
 // COMANDOS GENERALES
-main {background-color: rgb(85, 182, 85); }
-h1 {@include h1};
-h2 {@include h2};
-.parrafos {@include parrafos};
+main {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: rgb(85, 182, 85);
+}
 
+h1 {
+    @include h1
+}
+
+;
+
+h2 {
+    @include h2
+}
+
+;
+
+.parrafos {
+    @include parrafos
+}
+;
