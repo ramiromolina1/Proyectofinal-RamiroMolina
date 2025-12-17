@@ -1,4 +1,5 @@
 @use "../utilidades/mixins.scss";
+@use "../utilidades/variables.scss";
 
 main {
 
@@ -27,7 +28,7 @@ main {
 
             .boton-detalle {
                 padding: 3px;
-                background-color: rgb(160, 93, 73);
+                background-color: variables.$bottom-detalle ;
                 border: 1px solid black;
             }
 

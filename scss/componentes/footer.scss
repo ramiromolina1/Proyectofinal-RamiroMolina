@@ -1,9 +1,11 @@
+@use "../utilidades/variables.scss";
+
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background-color: green;
+    background-color: variables.$footer-color;
     padding: 6px;
 
     .imgfooter {

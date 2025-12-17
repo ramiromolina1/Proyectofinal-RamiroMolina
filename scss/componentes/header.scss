@@ -1,10 +1,11 @@
+@use "../utilidades/variables.scss";
+
 header {
     display: flex;
     padding: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: lightgreen;
-
+    background-color: variables.$header-color;
 
     #im-header {
         padding: 5px;

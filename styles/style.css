@@ -256,7 +256,7 @@ main .preguntas-frecuentes-countainer .boton-pregs {
   border: none;
 }
 main .preguntas-frecuentes-countainer .boton-pregs:hover {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 main .preguntas-frecuentes-countainer .respuestas {
   margin: 0px 30px;
@@ -296,7 +296,7 @@ main .formsend-container .formsend {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-left: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid white;
 }
 main .formsend-container .formsend .im-at {
   width: 60px;
