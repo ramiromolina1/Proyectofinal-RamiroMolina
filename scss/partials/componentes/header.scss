@@ -1,4 +1,5 @@
 @use "../utilidades/variables.scss";
+@use "../utilidades/extend.scss";
 
 header {
     display: flex;
@@ -35,6 +36,13 @@ header {
 
             li {
                 list-style-type: none;
+                @extend %boton;
+                background-color: antiquewhite;
+            }
+
+            a {
+                text-decoration: none;
+                color: black
             }
 
             a:hover {
@@ -58,27 +66,45 @@ header {
         }
     }
 
-    @media (max-width:500px) {
-        ul li {
-            list-style-type: none;
+@media (max-width:500px) {
+        padding: 0px;
+        div{
+            padding: 0px !important;
+        }
+        ul {
+            padding: 0px;
+            margin: 0px;
+            li:first-child{
+                border-top: 1px solid variables.$borderliheader;   
+            }
+            li {
+                list-style-type: none;
+                border-bottom: 1px solid variables.$borderliheader;
+                padding: 5px 0px;
 
-            a:hover {
-                color: variables.$a-color;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: variables.$a-color;
+                }
             }
         }
 
         #id-celu {
-            display: block;
-            margin: 10px 10px 0px 10px;
+            display: flex;
+            align-items: center;
+            a img{
+                width: 50px;
+            }
         }
 
         #nav-compu {
             display: none;
         }
 
-        header {
-            padding: 0px;
-        }
+
 
         .formsend-container {
             margin: 5px;
