@@ -25,7 +25,7 @@
         <div class="id-celu">
             <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                 aria-controls="collapseExample">
-                <img src="../img/iconMenuHeader.png" alt="icono menu celular">
+                <img src="../img/iconMenuHeader.png" alt="">
             </a>
         </div>
         <div class="collapse" id="collapseExample">
@@ -183,19 +183,24 @@
         <h2 data-aos="fade-right" data-aos-duration="1000">Contactate con nosotros</h2>
 
         <form action="/submit" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="Nombre" id="nombre">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+            <div class="campo">
+                <label for="mail">e-mail</label>
+                <input type="text" name="mail" id="mail">
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje/pregunta</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido">
-
-            <label for="mail">e-mail</label>
-            <input type="text" name="mail" id="mail">
-
-            <label for="mensaje">Mensaje/pregunta</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="botonform">
         </form>
     </main>
 
