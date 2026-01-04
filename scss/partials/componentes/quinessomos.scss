@@ -1,45 +1,96 @@
 @use "../utilidades/mixins.scss";
 
-#sec-quienessomos {
+.sec-quienessomos {
     margin: 20px;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "h1 h1"
-        "img-familia parrafo"
-        "img-galpon parrafo"
+    grid-template-areas:
+        "h1 h1"
+        "img-familia parrafo1"
+        "img-galpon parrafo2"
     ;
 
-    #h1-quienessomos {
+    .h1-quienessomos {
         grid-area: h1;
 
     }
 
-    #img-familia-quienessomos {
+    .img-familia-quienessomos {
         grid-area: img-familia;
     }
 
-    #img-galpon-quienessomos {
+    .img-galpon-quienessomos {
         grid-area: img-galpon;
     }
 
-    #p-quienessomos {
-        grid-area: parrafo;
+    .p-quienessomos1 {
+        margin: 15px;
+        grid-area: parrafo1;
+    }
+
+    .p-quienessomos2 {
+        margin: 15px;
+        grid-area: parrafo2;
     }
 
     img {
         width: 100%;
     }
-
-    img:hover {
-        @include animation-images;
-    }
-
 }
 
 @media (max-width:500px) {
-    #sec-quienessomos {
+    .sec-quienessomos {
         grid-template-rows: 1fr;
-        p {font-size: 18px;}
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .sec-nuestramision {
+        margin: 8px;
+        text-align: center;
+    }
+
+    .lista-valores {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.sec-nuestramision {
+    margin: 30px 200px;
+    @include flex (column, start, center);
+    flex-wrap: wrap;
+    gap: 80px;
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .valores {
+        img {
+            margin: 100px;
+            justify-self: center;
+            width: 120px;
+            place-self: center;
+        }
+
+        img:hover {
+            @include animation-images
+        }
+
+        .lista-valores {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 40px;
+            text-align: center;
+            list-style-position: inside;
+            padding: 0;
+        }
     }
 }

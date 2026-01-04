@@ -8,7 +8,7 @@ header {
     flex-wrap: wrap;
     background-color: variables.$header-color;
 
-    #im-header {
+    .im-header {
         padding: 5px;
 
         .galponlogo {
@@ -16,7 +16,7 @@ header {
         }
     }
 
-    #id-celu {
+    .id-celu {
         display: none;
         padding: 5px;
     }
@@ -60,7 +60,7 @@ header {
             background-color: variables.$header-color;
             border: none;
 
-            #ul-li-celu {
+            .ul-li-celu {
                 text-align: center;
             }
         }
@@ -92,7 +92,7 @@ header {
             }
         }
 
-        #id-celu {
+        .id-celu {
             display: flex;
             align-items: center;
             a img{
@@ -100,7 +100,7 @@ header {
             }
         }
 
-        #nav-compu {
+        .nav-compu {
             display: none;
         }
 

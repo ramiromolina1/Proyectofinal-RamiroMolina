@@ -47,13 +47,13 @@ header {
   flex-wrap: wrap;
   background-color: lightgreen;
 }
-header #im-header {
+header .im-header {
   padding: 5px;
 }
-header #im-header .galponlogo {
+header .im-header .galponlogo {
   width: 90px;
 }
-header #id-celu {
+header .id-celu {
   display: none;
   padding: 5px;
 }
@@ -90,7 +90,7 @@ header #collapseExample #sub-collapse {
   background-color: lightgreen;
   border: none;
 }
-header #collapseExample #sub-collapse #ul-li-celu {
+header #collapseExample #sub-collapse .ul-li-celu {
   text-align: center;
 }
 @media (max-width: 500px) {
@@ -119,14 +119,14 @@ header #collapseExample #sub-collapse #ul-li-celu {
   header ul li a:hover {
     color: rgb(158, 48, 48);
   }
-  header #id-celu {
+  header .id-celu {
     display: flex;
     align-items: center;
   }
-  header #id-celu a img {
+  header .id-celu a img {
     width: 50px;
   }
-  header #nav-compu {
+  header .nav-compu {
     display: none;
   }
   header .formsend-container {
@@ -171,7 +171,7 @@ main .eslogan {
 main .img-home {
   display: flex;
 }
-main .img-home #galponlogo {
+main .img-home .galponlogo {
   width: 200px;
   padding: auto;
   margin: auto;
@@ -394,40 +394,80 @@ main form {
   }
 }
 
-#sec-quienessomos {
+.sec-quienessomos {
   margin: 20px;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "h1 h1" "img-familia parrafo" "img-galpon parrafo";
+  grid-template-areas: "h1 h1" "img-familia parrafo1" "img-galpon parrafo2";
 }
-#sec-quienessomos #h1-quienessomos {
+.sec-quienessomos .h1-quienessomos {
   grid-area: h1;
 }
-#sec-quienessomos #img-familia-quienessomos {
+.sec-quienessomos .img-familia-quienessomos {
   grid-area: img-familia;
 }
-#sec-quienessomos #img-galpon-quienessomos {
+.sec-quienessomos .img-galpon-quienessomos {
   grid-area: img-galpon;
 }
-#sec-quienessomos #p-quienessomos {
-  grid-area: parrafo;
+.sec-quienessomos .p-quienessomos1 {
+  margin: 15px;
+  grid-area: parrafo1;
 }
-#sec-quienessomos img {
+.sec-quienessomos .p-quienessomos2 {
+  margin: 15px;
+  grid-area: parrafo2;
+}
+.sec-quienessomos img {
   width: 100%;
-}
-#sec-quienessomos img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s linear;
 }
 
 @media (max-width: 500px) {
-  #sec-quienessomos {
+  .sec-quienessomos {
     grid-template-rows: 1fr;
   }
-  #sec-quienessomos p {
+  .sec-quienessomos p {
     font-size: 18px;
   }
+  .sec-nuestramision {
+    margin: 8px;
+    text-align: center;
+  }
+  .lista-valores {
+    grid-template-columns: 1fr;
+  }
+}
+.sec-nuestramision {
+  margin: 30px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.sec-nuestramision div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sec-nuestramision .valores img {
+  margin: 100px;
+  justify-self: center;
+  width: 120px;
+  place-self: center;
+}
+.sec-nuestramision .valores img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.sec-nuestramision .valores .lista-valores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  text-align: center;
+  list-style-position: inside;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
