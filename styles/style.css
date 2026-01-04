@@ -327,7 +327,7 @@ main .card-countainer-nues-proyecto img:hover {
 @media (max-width: 500px) {
   main .card-countainer-nues-proyecto div {
     padding: 30px;
-    height: 650px;
+    height: 700px;
     flex-direction: column;
   }
   main .card-countainer-nues-proyecto div img {
@@ -337,6 +337,12 @@ main .card-countainer-nues-proyecto img:hover {
     margin: 15px;
     font-size: 15px;
   }
+}
+
+header nav ul li, .boton-detalle {
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid black;
 }
 
 main ul li {
@@ -463,6 +469,8 @@ main form .botonform:hover {
 }
 @media (max-width: 500px) {
   main .card-countainer-ubicacion {
+    display: flex;
+    flex-direction: column;
     margin: 15px;
   }
   main .card-countainer-ubicacion .ubi-link {

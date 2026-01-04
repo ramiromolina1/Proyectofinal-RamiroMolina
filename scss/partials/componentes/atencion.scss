@@ -1,5 +1,6 @@
 @use "../utilidades/mixins.scss";
 @use "../utilidades/variables.scss";
+@use "./botones.scss";
 
 main {
 
@@ -138,6 +139,8 @@ main {
 
     @media (max-width:500px) {
         .card-countainer-ubicacion {
+            display: flex;
+            flex-direction: column;
             margin: 15px;
 
             .ubi-link {
