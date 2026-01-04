@@ -10,26 +10,47 @@ main {
     }
 
     .card-countainer-nues-proyecto {
-        margin: 10px;
+        margin: 10px auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 50px;
+        width: 80%;
 
-        .countainer-nues-proyecto {
-            padding: 5px;
-            @include flex (row, center, start);
-            .img-vertical {
-                height: 130px;
+
+        div {
+            @include flex(row, center, center);
+            background-color: rgb(65, 150, 65);
+            height: 400px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+
+            img {
+                width: 20%;
+                margin: 50px;
             }
         }
 
-        .countainer-nues-proyecto2 {
-            padding: 5px;
-            @include flex (row-reverse, center, start); 
-            .img-horizontal {
-                height: 120px;
+        img:hover {
+            @include animation-images;
+        }
+
+        @media (max-width:500px) {
+            div {
+                padding: 30px;
+                height: 650px;
+                flex-direction: column;
+
+                img {
+                    width: 70%;
+                }
+
+                .parrafos {
+                    margin: 15px;
+                    font-size: 15px;
+                }
             }
         }
-            img:hover {@include animation-images;}
     }
+
+
 }

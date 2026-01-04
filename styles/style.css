@@ -263,34 +263,43 @@ main .parrafos {
   font-family: "Roboto", sans-serif;
 }
 main .card-countainer-nues-proyecto {
-  margin: 10px;
+  margin: 10px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 50px;
+  width: 80%;
 }
-main .card-countainer-nues-proyecto .countainer-nues-proyecto {
-  padding: 5px;
+main .card-countainer-nues-proyecto div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+  background-color: rgb(65, 150, 65);
+  height: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
 }
-main .card-countainer-nues-proyecto .countainer-nues-proyecto .img-vertical {
-  height: 130px;
-}
-main .card-countainer-nues-proyecto .countainer-nues-proyecto2 {
-  padding: 5px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: start;
-}
-main .card-countainer-nues-proyecto .countainer-nues-proyecto2 .img-horizontal {
-  height: 120px;
+main .card-countainer-nues-proyecto div img {
+  width: 20%;
+  margin: 50px;
 }
 main .card-countainer-nues-proyecto img:hover {
   transform: scale(1.1);
   transition: all 0.3s linear;
+}
+@media (max-width: 500px) {
+  main .card-countainer-nues-proyecto div {
+    padding: 30px;
+    height: 650px;
+    flex-direction: column;
+  }
+  main .card-countainer-nues-proyecto div img {
+    width: 70%;
+  }
+  main .card-countainer-nues-proyecto div .parrafos {
+    margin: 15px;
+    font-size: 15px;
+  }
 }
 
 main ul li {
