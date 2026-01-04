@@ -1,5 +1,6 @@
 @use "../utilidades/variables.scss";
 @use "../utilidades/extend.scss";
+@use "../utilidades/mixins.scss";
 
 header {
     display: flex;
@@ -37,16 +38,18 @@ header {
             li {
                 list-style-type: none;
                 @extend %boton;
+                padding: 10px !important;
                 background-color: antiquewhite;
+            }
+
+            li:hover {
+                background-color: rgb(250, 239, 227);
+                @include animation-buttons;
             }
 
             a {
                 text-decoration: none;
                 color: black
-            }
-
-            a:hover {
-                color: variables.$a-color;
             }
         }
     }
@@ -66,26 +69,31 @@ header {
         }
     }
 
-@media (max-width:500px) {
+    @media (max-width:500px) {
         padding: 0px;
-        div{
+
+        div {
             padding: 0px !important;
         }
+
         ul {
             padding: 0px;
             margin: 0px;
-            li:first-child{
-                border-top: 1px solid variables.$borderliheader;   
+
+            li:first-child {
+                border-top: 1px solid variables.$borderliheader;
             }
+
             li {
                 list-style-type: none;
                 border-bottom: 1px solid variables.$borderliheader;
                 padding: 5px 0px;
 
-                a{
+                a {
                     color: black;
                     text-decoration: none;
                 }
+
                 a:hover {
                     color: variables.$a-color;
                 }
@@ -95,7 +103,8 @@ header {
         .id-celu {
             display: flex;
             align-items: center;
-            a img{
+
+            a img {
                 width: 50px;
             }
         }

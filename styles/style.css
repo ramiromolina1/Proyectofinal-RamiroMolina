@@ -72,14 +72,17 @@ header nav ul {
 }
 header nav ul li {
   list-style-type: none;
+  padding: 10px !important;
   background-color: antiquewhite;
+}
+header nav ul li:hover {
+  background-color: rgb(250, 239, 227);
+  transform: scale(1.1);
+  transition: all 0.1s linear;
 }
 header nav ul a {
   text-decoration: none;
   color: black;
-}
-header nav ul a:hover {
-  color: rgb(158, 48, 48);
 }
 header #collapseExample {
   background-color: lightgreen;
@@ -400,6 +403,7 @@ main form {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "h1 h1" "img-familia parrafo1" "img-galpon parrafo2";
+  place-items: center;
 }
 .sec-quienessomos .h1-quienessomos {
   grid-area: h1;
@@ -410,33 +414,20 @@ main form {
 .sec-quienessomos .img-galpon-quienessomos {
   grid-area: img-galpon;
 }
-.sec-quienessomos .p-quienessomos1 {
+.sec-quienessomos p {
   margin: 15px;
+  align-items: center;
+}
+.sec-quienessomos .p-quienessomos1 {
   grid-area: parrafo1;
 }
 .sec-quienessomos .p-quienessomos2 {
-  margin: 15px;
   grid-area: parrafo2;
 }
 .sec-quienessomos img {
   width: 100%;
 }
 
-@media (max-width: 500px) {
-  .sec-quienessomos {
-    grid-template-rows: 1fr;
-  }
-  .sec-quienessomos p {
-    font-size: 18px;
-  }
-  .sec-nuestramision {
-    margin: 8px;
-    text-align: center;
-  }
-  .lista-valores {
-    grid-template-columns: 1fr;
-  }
-}
 .sec-nuestramision {
   margin: 30px 200px;
   display: flex;
@@ -448,8 +439,13 @@ main form {
 }
 .sec-nuestramision div {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  width: 60%;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+  background-color: rgb(65, 150, 65);
 }
 .sec-nuestramision .valores img {
   margin: 100px;
@@ -468,6 +464,24 @@ main form {
   text-align: center;
   list-style-position: inside;
   padding: 0;
+}
+
+@media (max-width: 500px) {
+  .sec-quienessomos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1.5fr 1fr 1.5fr;
+    grid-template-areas: "h1" "parrafo1" "img-familia" "parrafo2" "img-galpon";
+  }
+  .sec-quienessomos p {
+    font-size: 18px;
+  }
+  .sec-nuestramision {
+    margin: 8px;
+    text-align: center;
+  }
+  .lista-valores {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,3 @@
-
 @mixin h1 {
     font-family: "Dancing Script", cursive;
     font-size: 50px;
@@ -11,7 +10,7 @@
     margin: 20px;
     font-size: 28px;
     height: 60px;
-    
+
 }
 
 @mixin parrafos {
@@ -23,7 +22,11 @@
 @mixin animation-images {
     transform: scale(1.1);
     transition: all 0.3s linear;
+}
 
+@mixin animation-buttons {
+    transform: scale(1.1);
+    transition: all 0.1s linear;
 }
 
 @mixin flex ($direction, $justify, $align) {

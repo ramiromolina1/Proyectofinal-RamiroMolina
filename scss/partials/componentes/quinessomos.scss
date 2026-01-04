@@ -10,10 +10,10 @@
         "img-familia parrafo1"
         "img-galpon parrafo2"
     ;
+    place-items: center;
 
     .h1-quienessomos {
         grid-area: h1;
-
     }
 
     .img-familia-quienessomos {
@@ -24,13 +24,16 @@
         grid-area: img-galpon;
     }
 
-    .p-quienessomos1 {
+    p {
         margin: 15px;
+        align-items: center;
+    }
+
+    .p-quienessomos1 {
         grid-area: parrafo1;
     }
 
     .p-quienessomos2 {
-        margin: 15px;
         grid-area: parrafo2;
     }
 
@@ -38,26 +41,6 @@
         width: 100%;
     }
 }
-
-@media (max-width:500px) {
-    .sec-quienessomos {
-        grid-template-rows: 1fr;
-
-        p {
-            font-size: 18px;
-        }
-    }
-
-    .sec-nuestramision {
-        margin: 8px;
-        text-align: center;
-    }
-
-    .lista-valores {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 .sec-nuestramision {
     margin: 30px 200px;
@@ -67,9 +50,14 @@
 
     div {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-
+        width: 60%;
+        align-items: center;
+        // border: 1px solid black;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+        background-color: rgb(65, 150, 65);
     }
 
     .valores {
@@ -92,5 +80,30 @@
             list-style-position: inside;
             padding: 0;
         }
+    }
+}
+
+@media (max-width:500px) {
+    .sec-quienessomos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1.5fr 1fr 1.5fr;
+        grid-template-areas: "h1"
+            "parrafo1"
+            "img-familia"
+            "parrafo2"
+            "img-galpon";
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .sec-nuestramision {
+        margin: 8px;
+        text-align: center;
+    }
+
+    .lista-valores {
+        grid-template-columns: 1fr;
     }
 }
