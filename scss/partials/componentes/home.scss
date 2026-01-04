@@ -18,7 +18,10 @@ main {
             margin: auto;
             align-items: auto;
         }
-        img:hover {@include animation-images;}
+
+        img:hover {
+            @include animation-images;
+        }
     }
 
     .home-container {
@@ -38,6 +41,46 @@ main {
 
         ul li {
             list-style-type: none;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .porque-elegirnos {
+
+        margin: 28px;
+        @include flex (row, center, start);
+        flex-wrap: wrap;
+        gap: 80px;
+
+        .bloque {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+            background-color: rgb(207, 79, 79);
+
+            @media (max-width:500px) {
+                p {
+                    margin: 8px;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .img-bloque {
+            align-items: center;
+            width: 150px;
+        }
+
+        img:hover {
+            @include animation-images
         }
     }
 }

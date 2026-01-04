@@ -200,6 +200,43 @@ main .home-container .div-tildes .im-tildes {
 main .home-container ul li {
   list-style-type: none;
 }
+main h2 {
+  text-align: center;
+}
+main .porque-elegirnos {
+  margin: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+main .porque-elegirnos .bloque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+  background-color: rgb(207, 79, 79);
+}
+@media (max-width: 500px) {
+  main .porque-elegirnos .bloque p {
+    margin: 8px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+main .porque-elegirnos .img-bloque {
+  align-items: center;
+  width: 150px;
+}
+main .porque-elegirnos img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
 
 header nav ul li, .boton-detalle {
   display: inline-block;
@@ -217,7 +254,7 @@ main .boxes {
   gap: 80px;
 }
 main .boxes .typebox {
-  width: 379px;
+  width: 400px;
   padding: 20px;
   display: flex;
   flex-direction: column;
