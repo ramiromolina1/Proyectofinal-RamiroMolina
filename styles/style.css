@@ -471,10 +471,10 @@ main form .botonform:hover {
   main .card-countainer-ubicacion {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    padding: 30px;
   }
   main .card-countainer-ubicacion .ubi-link {
-    width: 200px;
+    width: 300px;
   }
   main .boton-pregs {
     text-align: left;
